@@ -1,2 +1,0 @@
-# Briefmarkensammlung
-digitalisierte Briefmarkensammlung
