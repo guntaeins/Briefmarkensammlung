@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Die Briefmarkensammlung – Ein Lebenswerk</title>
+  <meta name="description" content="Eine Briefmarkensammlung als digitales Archiv: Album für Album, Seite für Seite. Mit den Geschichten hinter den besonderen Stücken." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="top">
+    <div class="wrap">
+      <span class="brand">Die Sammlung</span>
+      <span class="links">
+        <a href="#highlights-sec">Besondere Stücke</a>
+        <a href="#alben-sec">Alben</a>
+        <a href="#ueber">Über</a>
+      </span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Ein Lebenswerk in kleinen Rechtecken</p>
+      <h1>Die Briefmarken&shy;sammlung meines Grossvaters</h1>
+      <p class="lede">
+        Über Jahrzehnte zusammengetragen, von Hand geordnet und beschriftet.
+        Diese Seite bewahrt das Werk – Seite für Seite, Album für Album,
+        und erzählt zu den besonderen Stücken ihre Geschichte.
+      </p>
+      <div class="stats">
+        <div class="stat"><b id="stat-laender">–</b><span>Länder</span></div>
+        <div class="stat"><b id="stat-alben">–</b><span>Alben</span></div>
+        <div class="stat"><b id="stat-seiten">–</b><span>Seiten erfasst</span></div>
+        <div class="stat"><b id="stat-epoche">–</b><span>Epoche</span></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Besondere Stücke -->
+  <section id="highlights-sec">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Besondere Stücke</h2>
+        <p>
+          Manche Marken erzählen eine eigene Geschichte – wegen ihres Alters,
+          ihrer Seltenheit oder des Ereignisses, für das sie gedruckt wurden.
+          Stücke, die mit
+          <span class="tresor" style="vertical-align:middle">Gehört in den Tresor</span>
+          markiert sind, sollten sicher verwahrt werden: Es sind die Seiten,
+          bei denen ein Verlust nicht zu ersetzen wäre.
+        </p>
+      </div>
+      <div class="highlights" id="highlights"></div>
+    </div>
+  </section>
+
+  <!-- Alben -->
+  <section id="alben-sec">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Die Alben</h2>
+        <p>Jede Albumseite im Original-Scan. Zum Vergrössern anklicken – mit den
+           Pfeiltasten lässt sich durch die Seiten blättern, mit ESC schliesst man wieder.</p>
+        <div class="chips" id="album-nav"></div>
+      </div>
+      <div id="albums"></div>
+    </div>
+  </section>
+
+  <!-- Über -->
+  <section id="ueber" style="border-bottom:none">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Über diese Sammlung</h2>
+        <p>
+          Die Sammlung wächst laufend. Erfasst sind bisher zwei Alben; weitere
+          folgen nach und nach. Jede Seite wurde einzeln fotografiert und in der
+          Reihenfolge belassen, in der sie der Sammler selbst angelegt hat –
+          samt der von Hand gezogenen Rahmen um jede Marke.
+        </p>
+        <p>
+          <strong>Bewusst ohne Preise.</strong> Auf dieser Seite stehen keine
+          Wertangaben. Der Wert klassischer Marken hängt von Zähnung, Stempel,
+          Papier und Erhaltung ab und lässt sich seriös nur am Original
+          beurteilen – eine Zahl auf einer Webseite wäre bestenfalls eine
+          Schätzung und schlimmstenfalls irreführend. Wichtiger ist ohnehin,
+          zu wissen, <em>welche</em> Stücke aufmerksam behandelt werden
+          müssen: Diese sind mit dem Tresor-Hinweis markiert. Wer eine
+          verbindliche Bewertung braucht – für eine Versicherung oder einen
+          Verkauf –, wendet sich an einen geprüften Sachverständigen eines
+          Philatelistenverbands.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p class="dedication">In dankbarer Erinnerung an einen leidenschaftlichen Sammler.</p>
+      <p class="disclaimer">
+        © <span id="year"></span> – privates Sammlungsarchiv.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lb" id="lb">
+    <div class="lb-bar">
+      <div>
+        <div class="lb-title" id="lb-title"></div>
+        <div class="lb-sub" id="lb-sub"></div>
+      </div>
+      <button class="lb-close" id="lb-close" aria-label="Schliessen">&times;</button>
+    </div>
+    <div class="lb-stage">
+      <button class="lb-nav prev" id="lb-prev" aria-label="Zurück">&#8249;</button>
+      <img id="lb-img" src="" alt="" />
+      <button class="lb-nav next" id="lb-next" aria-label="Weiter">&#8250;</button>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="data-album2.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
